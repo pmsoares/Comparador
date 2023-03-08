@@ -1,4 +1,4 @@
-﻿using Comparador.Web.Models;
+﻿using Comparador.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 

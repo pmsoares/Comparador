@@ -17,4 +17,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Comparador.DataAccess\Comparador.DataAccess.csproj" />
+    <ProjectReference Include="..\Comparador.Models\Comparador.Models.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,4 +1,4 @@
-namespace Comparador.Web.Models
+namespace Comparador.Models
 {
     public class ErrorViewModel
     {

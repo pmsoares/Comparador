@@ -1,6 +1,5 @@
-using Microsoft.AspNetCore.Identity;
+using Comparador.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
-using Comparador.Web.Areas.Identity.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
