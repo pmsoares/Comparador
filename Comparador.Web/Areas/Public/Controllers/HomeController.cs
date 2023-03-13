@@ -2,8 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace Comparador.Web.Controllers
+namespace Comparador.Web.Areas.Public.Controllers
 {
+    [Area("Public")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
