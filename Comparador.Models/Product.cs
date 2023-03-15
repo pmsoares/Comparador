@@ -16,7 +16,7 @@ namespace Comparador.Models
         public string? Description { get; set; }
 
         [ValidateNever]
-        public byte Image { get; set; } = 0;
+        public byte? Image { get; set; } = 0;
 
         [Required]
         [Display(Name = "Created Date")]
@@ -28,13 +28,6 @@ namespace Comparador.Models
 
         [ValidateNever]
         public Unit Unit { get; set; } = null!;
-
-        [Required]
-        [Display(Name = "Store")]
-        public int StoreId { get; set; }
-
-        [ValidateNever]
-        public Store Store { get; set; } = null!;
 
         [Required]
         [Display(Name = "Category")]
