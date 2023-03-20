@@ -1,0 +1,31 @@
+﻿@model List<Product>
+
+<div class="row pb-3">
+    @foreach (var produto in Model)
+    {
+        <div class="col-lg-3 col-md-6 mb-3 d-flex align-items-stretch">
+            <div class="row p-2">
+                <div class="card border-primary mb-3">
+                    <div class="card-title text-center pt-3">
+                        <h5>
+                            <a class="text-decoration-none" asp-action="Details" asp-route-id="@produto.Id">@produto.Name</a>
+                        </h5>
+                    </div>
+
+                    @if (produto.Image == 1)
+                    {
+                        <img src="~/images/@(produto.Id).png" class="card-img img-fluid" alt="@(produto.Id)" />
+                    }
+                    else
+                    {
+                        <img src="~/images/semimagem.jpg" class="card-img img-fluid" alt="@(produto.Id)" />
+                    }
+                    <div class="card-body">
+                        <p class="card-text">@produto.Brand.Name</p>
+                        <p class="card-text">@produto.Category.Name</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
